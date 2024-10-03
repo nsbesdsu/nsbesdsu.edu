@@ -1,183 +1,200 @@
-/* General styles for the body and headings */
+/* style.css */
+
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: white;
-    color: black;
     margin: 0;
-    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    margin: 0;
+}
+
+p {
     line-height: 1.6;
+    margin: 0 0 1em 0;
 }
 
-h1, h2 {
-    color: black;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin: 20px 0;
-}
-
-h2 {
-    font-size: 2em;
-    margin: 20px 0;
-}
-
-/* Navigation bar styles */
+/* Header Styles */
 header {
-    background-color: black;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
+    position: relative;
+    width: 100%;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav ul li a:hover {
-    color: red;
-}
-
-/* Hero Section */
 .hero {
-    background-image: url(https://cdn.prod.website-files.com/6695945de5b94f6ace0072ef/6695949de8f33fa4997c258e_centennial-walkway-overlay.jpg); /* Update with your image */
+    background-image: url('images/https://cdn.prod.website-files.com/6695945de5b94f6ace0072ef/6695949de8f33fa4997c258e_centennial-walkway-overlay.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: #ffffff;
     text-align: center;
-    color: #fff;
+    padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
-.join-btn {
-    background-color: red;
-    color: white;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    font-size: 1.1em;
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
+    font-weight: 700;
+    transition: color 0.3s;
 }
 
-.join-btn:hover {
-    background-color: black;
-    color: red;
+nav ul li a:hover {
+    color: #ff0000; /* Red accent */
 }
 
-/* Section Styles */
+/* Main Content Styles */
+main {
+    padding: 40px 20px;
+}
+
 section {
-    padding: 50px;
-    text-align: center;
-    background-color: white;
-    color: black;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
 }
 
-button {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+section h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
     border-radius: 5px;
-    font-size: 1em;
+}
+
+form button {
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: black;
-    color: red;
-}
-
-/* Event Feature Section */
-.event-feature {
-    background-color: black;
-    color: white;
-}
-
-.event-feature h2, .event-feature p {
-    color: white;
-}
-
-.event-feature button {
-    background-color: red;
-    color: white;
-}
-
-.event-feature button:hover {
-    background-color: white;
-    color: black;
+form button:hover {
+    background-color: #ff0000; /* Red accent */
 }
 
 /* Footer Styles */
 footer {
-    background-color: black;
-    color: white;
-    padding: 40px 0;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-footer a {
-    color: red;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: white;
-}
-
-#map {
-    height: 200px;
-    width: 300px;
+    padding: 20px;
 }
 
 footer p {
-    margin: 0;
+    margin: 10px 0;
 }
 
-/* Media Query for responsiveness */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
+.social-media {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-media li a:hover {
+    color: #ff0000; /* Red accent */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
     }
 
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        margin: 10px;
     }
 
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .hero {
-        height: 400px;
+        padding: 80px 20px;
     }
 
     .hero h1 {
-        font-size: 2em;
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
     }
 }
