@@ -1,0 +1,183 @@
+/* General styles for the body and headings */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Navigation bar styles */
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('your-image.jpg'); /* Update with your image */
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.join-btn {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.join-btn:hover {
+    background-color: black;
+    color: red;
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: black;
+    color: red;
+}
+
+/* Event Feature Section */
+.event-feature {
+    background-color: black;
+    color: white;
+}
+
+.event-feature h2, .event-feature p {
+    color: white;
+}
+
+.event-feature button {
+    background-color: red;
+    color: white;
+}
+
+.event-feature button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: red;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+#map {
+    height: 200px;
+    width: 300px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
