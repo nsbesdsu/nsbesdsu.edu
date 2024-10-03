@@ -54,7 +54,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('your-image.jpg'); /* Update with your image */
+    background-image: url(https://cdn.prod.website-files.com/6695945de5b94f6ace0072ef/6695949de8f33fa4997c258e_centennial-walkway-overlay.jpg); /* Update with your image */
     background-size: cover;
     background-position: center;
     height: 600px;
