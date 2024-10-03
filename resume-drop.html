@@ -3,33 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Drop - NSBE SDSU</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Resume Drop - National Society of Black Engineers - SDSU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="sponsorus.html">Sponsor Us</a></li>
-                <li><a href="resume-drop.html">Resume Drop</a></li>
-                <li><a href="egocareerfair.html">E.G.O Career Fair</a></li>
-            </ul>
-        </nav>
+        <div class="hero">
+            <h1>Resume Drop</h1>
+            <h2>Submit Your Resume to NSBE SDSU</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="sponsorus.html">Sponsor Us</a></li>
+                    <li><a href="resume-drop.html">Resume Drop</a></li>
+                    <li><a href="egocareerfair.html">E.G.O. Career Fair</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Resume Drop Section -->
-    <section>
-        <h1>Submit Your Resume</h1>
-        <p>Upload your resume below to be considered for career opportunities via NSBE SDSU.</p>
-        <!-- Add resume upload form or email submission option -->
-    </section>
+    <main>
+        <section class="resume-drop">
+            <h3>Submit Your Resume</h3>
+            <p>Looking for opportunities? Drop your resume here and we will share it with potential employers and recruiters during our events and career fairs.</p>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+                <input type="hidden" name="_subject" value="New Resume Submission">
+                <input type="hidden" name="_captcha" value="false">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 National Society of Black Engineers, SDSU Chapter</p>
+        <p>Follow us on social media</p>
+        <ul class="social-media">
+            <li><a href="https://www.instagram.com/yourhandle">Instagram</a></li>
+            <li><a href="https://www.twitter.com/yourhandle">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/yourhandle">LinkedIn</a></li>
+        </ul>
+        <p>&copy; 2024 National Society of Black Engineers - SDSU Chapter</p>
     </footer>
 </body>
 </html>
-
