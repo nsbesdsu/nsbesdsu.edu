@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E.G.O Career Fair - NSBE SDSU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="sponsorus.html">Sponsor Us</a></li>
+                <li><a href="resume-drop.html">Resume Drop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- E.G.O Career Fair Section -->
+    <section>
+        <h1>E.G.O Career Fair</h1>
+        <p>Join us for the upcoming E.G.O Career Fair where you'll have opportunities to network with employers in engineering and science fields.</p>
+        <!-- Add event details or registration information -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 National Society of Black Engineers, SDSU Chapter</p>
+    </footer>
+</body>
+</html>
